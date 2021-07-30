@@ -18,6 +18,7 @@ import io.argoproj.workflow.ApiClient;
 import io.argoproj.workflow.ApiException;
 import io.argoproj.workflow.ApiResponse;
 import io.argoproj.workflow.Configuration;
+import io.argoproj.workflow.Const;
 import io.argoproj.workflow.Pair;
 import io.argoproj.workflow.ProgressRequestBody;
 import io.argoproj.workflow.ProgressResponseBody;
@@ -139,7 +140,7 @@ public class EventServiceApi {
         final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
 
-        String[] localVarAuthNames = new String[] {  };
+        String[] localVarAuthNames = Const.DEFAULT_AUTH_NAMES;
         return localVarApiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -284,7 +285,7 @@ public class EventServiceApi {
         final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
 
-        String[] localVarAuthNames = new String[] {  };
+        String[] localVarAuthNames = Const.DEFAULT_AUTH_NAMES;
         return localVarApiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
